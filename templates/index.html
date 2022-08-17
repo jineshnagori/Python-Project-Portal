@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Final Project ~ Sudhanshu</title>
+    <!-- CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+    <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Sudhanshu Sharma</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about"><i class="fas fa-tachometer-alt"></i>About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact"><i class="far fa-address-book"></i>Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 col-12">
+                    <h1 class="hero-heading">
+                        Open Source Python Project Portal
+                    </h1>
+                    <p class="hero-para">
+                        Created by Sudhanshu Sharma
+                    </p>
+                    <a href="#projects" class="custom-btn btn-7"><span>View Projects</span></a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end col-12">
+                    <img src="{{url_for("static",filename="images/hero.png")}}" width="500px" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1>Python Projects</h1>
+                </div>
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/ml.png")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>Machine Learning Projects</h1>
+                            </div>
+                            <div class="card-para">
+                                <p>Machine Learning (ML) is a sub-category of artificial intelligence that refers to the process by which computers develop pattern recognition, or the ability to continuously learn from and make predictions based on data, then make adjustments without being specifically programmed to do so. Machine learning is incredibly complex and how it works varies depending on the task.</p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="/ml" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/dl.jpg")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>Deep Learning Projects</h1>
+                            </div>
+                            <div class="card-para">
+                                <p>Deep learning is a subset of machine learning (ML), which is itself a subset of artificial intelligence (AI). The concept of AI has been around since the 1950s, with the goal of making computers able to think and reason in a way similar to humans. As part of making machines able to think, ML is focused on how to make them learn without being explicitly programmed.</p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="/dl" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/fp.jpg")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>Final Project</h1>
+                            </div>
+                            <div class="card-para">
+                                <p>Air Quality Index - India is one of the higher air pollution country. Generally, air pollution is assessed by PM value or air quality index value. For my further analysis, I have selected PM-2.5 value to determine the air quality prediction and India-Bangalore region. Also, the data was collected through web scraping with the help of Beautiful Soup.
+                                </p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="https://air-quality-sudhanshu.herokuapp.com/" target="_blank" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fixed-bottom ">
+		<div style="min-height: 40px; background: #5161ce;">
+			<marquee style="color:#fff; margin-top: 7px;">
+				<h9>Designed & Developed by Sudhanshu Sharma. Student of Poornima Institute of Engineering and Technology, Jaipur</h9>
+			</marquee>
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="{{url_for("static",filename="js/script.js")}}"></script>
+</body>
+</html>

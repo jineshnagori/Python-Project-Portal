@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Final Project ~ Sudhanshu</title>
+    <!-- CSS -->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
+    <link rel="stylesheet" href="{{url_for("static",filename="css/style.css")}}">
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Sudhanshu Sharma</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="/"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about"><i class="fas fa-tachometer-alt"></i>About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact"><i class="far fa-address-book"></i>Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="dl-hero">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <h2 class="hero-heading">
+                        Deep Learning Projects
+                    </h2>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <a href="#projects" class="custom-btn btn-7 text-center"><span>View Projects</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/dl/1.png")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>MNIST Digit Recognization</h1>
+                            </div>
+                            <div class="card-para">
+                                <p>The MNIST dataset is an acronym that stands for the Modified National Institute of Standards and Technology dataset.</p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="https://ann-digit-rec.herokuapp.com/" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/dl/2.png")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>Cat-Dog Classification</h1>
+                            </div>
+                            <div class="card-para">
+                                <p>In this Deep Learning project for beginners, we will develop a convolution neural network for classifying images of Cats and Dogs using Python.</p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="https://dog-cat-classi.herokuapp.com/" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="{{url_for("static",filename="images/dl/3.png")}}" alt="" class="img-fluid">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-heading">
+                                <h1>Face Recognization</h1>
+                            </div>
+                            <div class="card-para">
+                                <p> In face detection, we only detect the location of the human face in an image but in face recognition, we make a system that can identify humans.
+                                </p>
+                            </div>
+                            <div class="card-btn">
+                                <a href="https://sudhanshusharma99-face-rec-app-i9x8c6.streamlitapp.com/" class="custom-btn btn-7"><span>View Projects</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="fixed-bottom ">
+		<div style="min-height: 40px; background: #5161ce;">
+			<marquee style="color:#fff; margin-top: 7px;">
+				<h9>Designed & Developed by Sudhanshu Sharma. Student of Poornima Institute of Engineering and Technology, Jaipur</h9>
+			</marquee>
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+    <script src="{{url_for("static",filename="js/script.js")}}"></script>
+</body>
+</html>
