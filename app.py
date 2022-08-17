@@ -22,4 +22,5 @@ def ml():
 def dl():
     return render_template("dl.html")
 
-app.run(debug = True)
+if __name__ == "__main__":
+    app.run(debug=True)
