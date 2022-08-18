@@ -453,7 +453,8 @@ textarea {
   margin: 20px auto 25px auto;
 }
 
-.ml-hero,.dl-hero {
+.ml-hero,
+.dl-hero {
   height: 50vh !important;
   display: flex;
   justify-content: center;
@@ -462,25 +463,25 @@ textarea {
 
 .profile-img {
   margin: 0 auto;
-    float: none;
-    margin-top: 30px;
-    text-align: center;
+  float: none;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .img-border {
   height: 400px;
-    width: 400px;
-    border: 20px solid rgba(0, 0, 0, 0.07);
-    margin: 0 auto;
-    border-radius: 50%;
+  width: 400px;
+  border: 20px solid rgba(0, 0, 0, 0.07);
+  margin: 0 auto;
+  border-radius: 50%;
 }
 
 .img-border img {
   margin: 0 auto;
-    float: none;
-    text-align: center;
-    border: 20px solid rgba(0, 0, 0, 0.17);
-    border-radius: 50%;
+  float: none;
+  text-align: center;
+  border: 20px solid rgba(0, 0, 0, 0.17);
+  border-radius: 50%;
 }
 
 .promo {
@@ -489,22 +490,35 @@ textarea {
 
 .promo span {
   background: #5161ce;
-    color: #fff;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 0px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
 }
 
 .profile-name {
   font-size: 60px;
-    font-weight: 600;
-    line-height: 65px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 65px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 420px) {
+  .img-border {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .profile-img, .profile-details {
+    margin-bottom: 30px;
+  }
 }
